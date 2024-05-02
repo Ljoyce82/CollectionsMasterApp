@@ -36,7 +36,7 @@ namespace CollectionsMasterConsoleUI
 
 
             Console.WriteLine("All Numbers Reversed:");
-            //Array.Reverse(numbers);
+            //Array.Reverse(numbers); //this work always and easier but got your code from video to work tweaked a bit.
 
             Console.WriteLine("---------REVERSE CUSTOM------------");
             ReverseArray(numbers);
@@ -120,7 +120,7 @@ namespace CollectionsMasterConsoleUI
 
             //TODO: Convert the list to an array and store that into a variable
             var listToArr = numbersList.ToArray();
-            NumberPrinter(listToArr);
+            NumberPrinter(listToArr); //prints said array
 
             //TODO: Clear the list
             numbersList.Clear();
