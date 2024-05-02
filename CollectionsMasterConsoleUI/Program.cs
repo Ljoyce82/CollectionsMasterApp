@@ -36,7 +36,7 @@ namespace CollectionsMasterConsoleUI
 
 
             Console.WriteLine("All Numbers Reversed:");
-            Array.Reverse(numbers);
+            //Array.Reverse(numbers);
 
             Console.WriteLine("---------REVERSE CUSTOM------------");
             ReverseArray(numbers);
@@ -200,14 +200,12 @@ namespace CollectionsMasterConsoleUI
         private static void ReverseArray(int[] array)
         {
             var reversed = new int[array.Length];
-            for(int i = array.Length - 1; i >= 0; i--)
+            for(int i = 0; i < array.Length; i++ )
             {
-                for(int x =0; x < array.Length; x++)
-                {
-                    reversed[x] = array[i];
-                }
+                reversed[i] = array[array.Length - 1 - i];
             }
-            NumberPrinter(array);
+            NumberPrinter(reversed);
+            
            
         }
 
